@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Snas:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>register</title>
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="nav-bar nav-bar__header">
+            <img src="./img/logo.png" alt="craftzy logo" class="img img--logo">
+            <ul class="list list--header">
+                <li class="item item--header"><a href="/index.html" class="btn btn--header">smartphones</a></li>
+                <li class="item item--header"><a href="/index.html" class="btn btn--header">tablets</a></li>
+                <li class="item item--header"><a href="/index.html" class="btn btn--header">computadoras</a></li>
+            </ul>
+
+            <ul class="list list--login">
+                <li class="item item--login"><a href="/login.html" class="btn btn--login">login</a></li>
+                <li class="item item--login"><a href="/register.html" class="btn btn--login">registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main main--register">
+        <form action="#" class="form form--register">
+            <h2 class="sub-title subtitle--register">registrate</h2>
+            <label for="" class="sub-title subtitle--register">
+                nombre:
+                <input type="text" class="input input--register">
+                <p class="text text--register">obligatorio</p>
+            </label>
+            <label for="" class="sub-title subtitle--register">
+                email:
+                <input type="email" class="input input--register">
+                <p class="text text--register">obligatorio</p>
+            </label>
+            <label for="" class="sub-title subtitle--register">
+                contraseña:
+                <input type="password" class="input input--register">
+                <p class="text text--register">obligatorio</p>
+            </label>
+
+            <h2 class="sub-title subtitle--register">pais de nacimiento</h2>
+            <select name="pais" id="" class="select select--register">
+                <option value="" disable selected>elige un país</option>
+                <option value="ar" class="option option--register">argentina</option>
+                <option value="br" class="option option--register">brasil</option>
+                <option value="ch" class="option option--register">chile</option>
+                <option value="bo" class="option option--register">bolivia</option>
+                <option value="pe" class="option option--register">peru</option>
+                <option value="ur" class="option option--register">uruguay</option>
+                <option value="par" class="option option--register">paraguay</option>
+            </select>
+
+            <h2 class="sub-title subtitle--register">género</h2>
+            <label for="masc" class="sub-title subtitle--sub-text">
+                masculino
+                <input name="genero" type="radio" class="input--option" id="masc">
+            </label>
+            <label for="fem" class="sub-title subtitle--sub-text">
+                femenino
+                <input name="genero" type="radio" class="input--option" id="fem">
+            </label>
+            <label for="pre" class="sub-title subtitle--sub-text">
+                prefiero no decirlo
+                <input  name="genero" type="radio" class="input--option" id="pre">
+            </label>
+            
+            <h2 class="sub-title subtitle--register">hobbies</h2>
+            
+            <label for="gui" class="sub-title subtitle--sub-text">
+                guitarra
+                <input name="hobbie" type="checkbox" class="input--option" id="gui">
+            </label>
+            <label for="fut" class="sub-title subtitle--sub-text">
+                futbol
+                <input name="hobbie" type="checkbox" class="input--option" id="fut">
+            </label>
+            <label for="tenis" class="sub-title subtitle--sub-text">
+                tenis
+                <input  name="hobbie" type="checkbox" class="input--option" id="tenis">
+            </label>
+            <label for="pro" class="sub-title subtitle--sub-text">
+                programacion
+                <input  name="hobbie" type="checkbox" class="input--option" id="pro">
+            </label>
+            
+            <h2 class="sub-title subtitle--register">dejanos tus comentarios</h2>
+            <textarea class="textarea textarea--register" name="comentarios" id="" cols="30" rows="10"></textarea>
+            <label for="terminos" class="sub-title subtitle--sub-text">
+                acepto los términos y condiciones
+                <input  name="hobbie" type="checkbox" class="input--register" id="terminos">
+            </label>
+            <div class="botonera">
+                <input type="submit" class="btn btn--submit" value="registrarme">
+                <input type="reset" class="btn btn--submit" value="cancelar">
+            </div>
+            <button class="btn btn--form btn--form__register">registrarme</button>
+            <button class="btn btn--form btn--form__register">cancelar</button>
+        </form>
+    </main>
+    
+</body>
+</html>

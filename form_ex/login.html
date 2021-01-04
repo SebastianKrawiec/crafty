@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Snas:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>login</title>
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="nav-bar nav-bar__header">
+            <img src="./img/logo.png" alt="craftzy logo" class="img img--logo">
+            <ul class="list list--header">
+                <li class="item item--header"><a href="/index.html" class="btn btn--header">smartphones</a></li>
+                <li class="item item--header"><a href="/index.html" class="btn btn--header">tablets</a></li>
+                <li class="item item--header"><a href="/index.html" class="btn btn--header">computadoras</a></li>
+            </ul>
+
+            <ul class="list list--login">
+                <li class="item item--login"><a href="/login.html" class="btn btn--login">login</a></li>
+                <li class="item item--login"><a href="/register.html" class="btn btn--login">registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main main--login">
+        <form class="form form--login" action="#">
+            <h2 class="sub-title subtitle--login">bienvenido</h2>
+            <label for="mail" class="sub-title label--login__email">
+                Email:
+            </label>
+            <input name="email" type="email" class="input input--login" id="mail" placeholder="Email">
+            <label for="pass" class="sub-title label--login__pass">
+                Contraseña:
+            </label>
+            <input type="password" class="input input--login" id="pass" placeholder="password">
+            <label for="record" class="sub-title label--login__checkbox">
+                <input class="input input--login__checkbox" type="checkbox" value="true" name="recordarme" id="record">
+                recordarme
+            </label>
+            <p class="text text--login"><!-- La convinacion ingresa de email y ocntraseña, no es válida --></p>
+            <input type="submit" class="btn btn--form" value="ingresar">
+        </form>
+    </main>
+    
+</body>
+</html>

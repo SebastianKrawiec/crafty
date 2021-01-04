@@ -1,0 +1,475 @@
+/* 
+///////////////// COLORES
+titulos: rgb(71, 71, 71);
+textos: rgb(85, 85, 85);
+
+
+
+*/
+
+/* 
+//////////////////////// BASE
+*/
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: open sans, sans-serif;
+}
+
+body {
+	box-sizing: inherit;
+}
+
+/* 
+////////////////////////  end BASE
+*/
+
+/* 
+////////////////////////  BODY
+*/
+
+.body {
+	background-image: url(../img/bg-2.png);
+}
+
+/* 
+//////////////////////// end BODY
+*/
+
+/* 
+//////////////////////// LIST
+*/
+.list {
+	list-style: none;
+}
+
+.item {
+	float: left;
+}
+
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	padding: 1rem 1.5rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+/* 
+//////////////////////// end LIST
+*/
+
+/* 
+//////////////////////// HEADER
+*/
+
+.header {
+	width: 100%;
+}
+
+.nav-bar__header {
+	width: 114rem;
+	background-color: orangered;
+	display: table;
+	clear: both;
+	padding: 1rem;
+	margin: 0.5rem auto;
+}
+
+.list--header,
+.img--logo {
+	float: left;
+}
+
+.list--header {
+	margin-left: 1.5rem;
+}
+
+.img--logo {
+	width: 7rem;
+	margin-top: 0.5rem;
+}
+
+.list--login {
+	float: right;
+}
+
+.item--header:not(:last-child),
+.item--login:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.btn--header,
+.btn--login {
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+/* 
+//////////////////////// end HEADER
+*/
+
+/* 
+//////////////////////// TYPO
+*/
+
+.sub-title {
+	color: rgb(71, 71, 71);
+}
+
+.text {
+	color: rgb(85, 85, 85);
+	font-size: 1.3rem;
+}
+
+/* 
+//////////////////////// end TYPO
+*/
+
+/* 
+//////////////////////// MAIN
+*/
+.main {
+	max-width: 114rem;
+	clear: both;
+}
+
+.main__content {
+	float: left;
+	background-color: white;
+	max-width: 80rem;
+	padding: 1rem;
+}
+
+.main__side-bar {
+	float: right;
+	max-width: 32rem;
+	height: 100vh;
+}
+
+.main__content,
+.main__side-bar {
+	margin-bottom: 3rem;
+}
+
+/* 
+//////////////////////// end MAIN
+*/
+
+/* 
+//////////////////////// INDEX
+*/
+
+.main--index {
+	width: 100%;
+	margin: 3rem auto;
+}
+
+/* 
+------------------- MAIN CONTENT
+*/
+
+.main__content--index {
+	width: 100%;
+}
+
+.list--content {
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.item--content {
+	width: calc((100% - 1rem) / 2);
+	margin-bottom: 2rem;
+}
+
+.item--content:nth-child(5),
+.item--content:nth-child(6) {
+	margin-bottom: 0;
+}
+
+.item--content:nth-child(even) {
+	margin-left: 1rem;
+}
+
+.figure--content {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.img--content {
+	width: 100%;
+}
+
+.subtitle--content {
+	text-transform: capitalize;
+}
+
+.text--content {
+	margin: 2rem 0;
+}
+
+.btn--caption {
+	background-color: orangered;
+	border-radius: 0.3rem;
+	font-weight: bold;
+}
+
+/* 
+------------------- end MAIN CONTENT
+*/
+
+/* 
+------------------- ASIDE
+*/
+
+.main__side-bar--index {
+	width: 100%;
+}
+
+.list--aside {
+	clear: both;
+	display: table;
+	margin-bottom: 3rem;
+}
+
+.aside--public {
+	width: 100%;
+	clear: both;
+	display: table;
+}
+
+.item--aside {
+	width: 100%;
+	border-bottom: 0.2rem solid rgb(135, 220, 241);
+	border-left: 0.2rem solid rgb(135, 220, 241);
+	border-right: 0.2rem solid rgb(135, 220, 241);
+	padding: 0.5rem;
+	background-color: rgb(252, 252, 252);
+}
+
+.item--aside__public {
+	width: 100%;
+	padding: 1rem;
+	background-color: white;
+	font-size: 3rem;
+}
+
+.img--aside__public {
+	width: 100%;
+	height: 100%;
+}
+
+.item--aside:nth-child(2),
+.item--aside:first-child {
+	border-top: 0.2rem solid rgb(135, 220, 241);
+}
+
+.item--aside:first-child {
+	margin-bottom: 1rem;
+}
+
+.public {
+	border: none;
+}
+
+.figure--aside {
+	float: left;
+}
+
+.subtitle--aside {
+	font-size: 2rem;
+	text-transform: capitalize;
+	padding: 0.5rem;
+}
+
+.caption--aside {
+	display: inline-block;
+	width: 50%;
+	font-size: 1.7rem;
+	margin-left: 1.5rem;
+	margin-top: 2rem;
+}
+
+/* .img--aside__public {
+    
+} */
+
+/* 
+-------------------- end ASIDE
+*/
+
+/* 
+//////////////////////// end INDEX
+*/
+
+/* 
+//////////////////////// NAV-BAR
+*/
+
+.nav-bar {
+	clear: both;
+}
+
+/* 
+//////////////////////// end NAV-BAR
+*/
+
+/* 
+//////////////////////// FORM
+*/
+
+.form {
+	width: 35rem;
+	margin: 0 auto;
+	padding: 2rem 0;
+	overflow: hidden;
+}
+
+.input {
+	display: inline-block;
+	width: 100rem;
+	border: solid 0.1rem #d0cdc7;
+	border-radius: 0.2rem;
+	padding: 0.8rem;
+}
+
+/* 
+//////////////////////// end FORM
+*/
+
+/* 
+//////////////////////// LOGIN
+*/
+.main--login {
+	margin: 3rem auto;
+}
+
+.label--login__email,
+.label--login__pass,
+.label--login__checkbox {
+	display: block;
+	text-transform: capitalize;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.label--login__email,
+.label--login__pass {
+	margin-bottom: 0.8rem;
+}
+
+.subtitle--login {
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.input--login {
+	margin-bottom: 2rem;
+}
+
+.input--login__checkbox {
+	width: 3rem;
+}
+
+.label--login__checkbox {
+	float: right;
+}
+
+.text--login {
+	margin-top: 4rem;
+	color: orangered;
+	font-size: 1.5rem;
+}
+
+.btn--form {
+	margin-top: 2rem;
+	border: none;
+	background-color: #008cb7;
+	border-radius: 1rem;
+	padding: 1rem 4rem;
+	text-transform: capitalize;
+	font-size: 1.8rem;
+}
+
+.btn--submit {
+	margin-top: 2rem;
+	color: black;
+	padding: 0.2rem 0.5rem;
+	text-transform: capitalize;
+}
+
+/* 
+//////////////////////// end LOGIN
+*
+
+/* 
+//////////////////////// REGISTER
+*/
+
+.main--register {
+	margin: 2rem auto 3rem auto;
+}
+
+.btn--form__register {
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	width: 11rem;
+	border-radius: 0.4rem;
+}
+
+.subtitle--register {
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	margin: 2rem 0 .5rem 0;
+}
+
+.subtitle--sub-text {
+	font-weight: 300;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	
+}
+
+.subtitle--register:first-child {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.text--register {
+	color: orangered;
+	margin-bottom: 2rem;
+}
+
+.input--register {
+	margin: 0.5rem 0;
+}
+
+/* .input-option {
+	margin: 2rem 0;
+} */
+
+.textarea--register{
+	width: 100%;
+	border: solid 0.1rem #d0cdc7;
+	border-radius: 0.2rem;
+	padding: 0.8rem;
+	margin: .3rem 0;
+}
+
+/* 
+//////////////////////// end REGISTER
+*/
